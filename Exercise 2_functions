@@ -1,0 +1,51 @@
+//ex 2.1
+const checkAges = (age) => age > 18 ? true : confirm('Do you have your parents permission to access this page?');
+
+checkAges(16)
+console.log(checkAges(21))
+
+//ex2.2
+function pow(a, b) {
+    return a ** b;
+}
+
+
+pow(3, 6);
+console.log(pow(3, 6));
+
+//ex2.3
+let ask = (question, yes, no) => confirm(question) ? yes() : no()
+
+ask("Do you agree?", () => alert("You agreed."), () => alert("You canceled the execution."));
+
+//ex2.4
+//Создайте объект-калькулятор с тремя методами:
+
+// read() запрашивает два значения и сохраняет их как свойства объекта.
+//sum() возвращает сумму сохраненных значений.
+//mul() перемножает сохраненные значения и возвращает резуль
+
+
+let calculator = {}
+calculator.read()
+alert(calculator.sum());
+alert(calculator.mul());
+
+//ex2.5
+
+// full :
+function min(a, b) {
+    if (a < b) {
+        return a
+    } else {
+        return b
+    }
+}
+
+min(10, 7)
+console.log(min(10, 7))
+// short :
+let mins = (a, b) => a < b ? a : b;
+mins(10, 7)
+console.log(mins(10, 7)
+)
